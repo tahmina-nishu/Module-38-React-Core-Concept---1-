@@ -1,23 +1,15 @@
 import "./App.css";
-import Todo from "./Todo";
+import Flowers from "./Flowers";
+// import Todo from "./Todo";
 
 function App() {
+  const flowers = ['Rose', 'Sunflower', 'Belly', 'Water Lily']
+
+  
   return (
     <>
-      <Todo 
-        task="Learn React" 
-        isDone={true}>
-      </Todo>
+      {flowers.map(flower => <Flowers name = {flower}></Flowers>)}
 
-      <Todo 
-        task="Core concepts" 
-        isDone={false}>
-      </Todo>
-      
-      <Todo 
-        task="Try JSX" 
-        isDone={true}>
-      </Todo>
     </>
   );
 }
